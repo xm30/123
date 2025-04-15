@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .news-container {
+            width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin-bottom: 30px;
+        }
+        
+        .content {
+            display: flex;
+        }
+        
+        .left-section {
+            flex: 2;
+            padding-right: 20px;
+        }
+        
+        .right-section {
+            flex: 1;
+            border-left: 1px solid #eee;
+            padding-left: 20px;
+        }
+        
+        .news-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .news-item h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .news-images {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+        
+        .news-images img {
+            width: 48%;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        .author {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .hot-news-item {
+            margin-bottom: 20px;
+        }
+        
+        .hot-news-item a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .hot-news-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .hot-news-item img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-container">
+        <h1>今日新闻资讯</h1>
+        <hr>
+        
+        <div class="content">
+            <div class="left-section">
+                <div class="news-item">
+                    <h2>科技创新推动经济发展</h2>
+                    <div class="news-images">
+                        <img src="tech1.jpg" alt="科技图片1">
+                        <img src="tech2.jpg" alt="科技图片2">
+                    </div>
+                    <p class="author">作者：张科技 | 发布时间：2023-06-15</p>
+                </div>
+                
+                <div class="news-item">
+                    <h2>城市绿化建设取得新进展</h2>
+                    <div class="news-images">
+                        <img src="green1.jpg" alt="绿化图片1">
+                        <img src="green2.jpg" alt="绿化图片2">
+                    </div>
+                    <p class="author">作者：李环保 | 发布时间：2023-06-15</p>
+                </div>
+                
+                <div class="news-item">
+                    <h2>国际文化交流节即将开幕</h2>
+                    <div class="news-images">
+                        <img src="culture1.jpg" alt="文化图片1">
+                        <img src="culture2.jpg" alt="文化图片2">
+                    </div>
+                    <p class="author">作者：王文化 | 发布时间：2023-06-14</p>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <h3>热点新闻</h3>
+                <div class="hot-news-item">
+                    <a href="#">夏季旅游热门目的地推荐</a>
+                    <img src="hot1.jpg" alt="热门新闻1">
+                </div>
+                
+                <div class="hot-news-item">
+                    <a href="#">新能源汽车市场持续升温</a>
+                    <img src="hot2.jpg" alt="热门新闻2">
+                </div>
+                
+                <div class="hot-news-item">
+                    <a href="#">健康饮食新趋势解读</a>
+                    <img src="hot3.jpg" alt="热门新闻3">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

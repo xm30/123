@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位知识点展示</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            border: 2px solid #333;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        
+ .main-title {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 300px;
+     height: 150px;
+     background-color: rgba(255, 255, 255, 0.9);
+     border-radius: 150px/75px; /* 椭圆形状 */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     box-shadow: 0 0 20px rgba(0,0,0,0.3);
+     z-index: 2;
+ }
+        
+        .main-title h2 {
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+        
+        .main-title p {
+            color: #555;
+            margin: 0;
+            font-size: 16px;
+            padding: 0 30px;
+        }
+        
+        .knowledge-point {
+            position: absolute;
+            width: 180px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border: 1px solid #ddd;
+            z-index: 3;
+        }
+        
+        .knowledge-point h3 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            font-size: 16px;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .knowledge-point p {
+            margin: 0;
+            color: #34495e;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* 精确位置调整 */
+        .point1 {
+            top: 60px;
+            left: 80px;
+        }
+        
+        .point2 {
+            top: 60px;
+            right: 80px;
+        }
+        
+        .point3 {
+            bottom: 60px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 中间椭圆框 -->
+        <div class="main-title">
+            <h2>HTML   CSS</h2>
+            <p>5        3</p>
+        </div>
+        
+        <!-- 三个知识点方框 -->
+        <div class="knowledge-point point1">
+            <h3>HTML基础和HTML5</h3>
+            <li>标签与属性</li>
+<li>HTML5多媒体（视频和音频）</li>
+<li>HTMLS图像标签（画布和SVG)</li> 
+<li>HTML5地理定位</li>
+        </div>
+        
+        <div class="knowledge-point point2">
+            <h3>CSS基础和CSS3</h3>
+            <li>CSS选择器</li>
+			<li>CSS样式</li>
+			<li>CSS盒模型与定位</li>
+			<li>CSS3的2D和3D转换
+		</li>
+			<li>CSS3的过渡与动画</li>
+        </div>
+        
+        <div class="knowledge-point point3">
+            <h3>Javascript</h3>
+            <li>数据类型</li>
+			<li>运算符</li>
+			<li>基础算法</li>
+			<li>bom对象</li>
+			<li>dom对象</li>
+        </div>
+    </div>
+</body>
+</html>
