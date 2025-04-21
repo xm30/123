@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh - CN">
+
+<head>
+    <meta charset="UTF - 8">
+    <meta name="viewport" content="width=device - width, initial - scale=1.0">
+    <title>个人信息采集表</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="tel"] {
+            max - length: 50; /* 设置合适的长度限制 */
+        }
+
+        textarea {
+            resize: none; /* 禁止手动改变textarea大小 */
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border - radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>个人简历</legend>
+        <table>
+            <tr>
+                <th>姓名</th>
+                <td><input type="text" placeholder="请输入姓名"></td>
+                <th>性别</th>
+                <td><select>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select></td>
+                <th>年龄</th>
+                <td><input type="number" placeholder="请输入年龄" min="0" max="150"></td>
+            </tr>
+            <tr>
+                <th>籍贯</th>
+                <td><input type="text" placeholder="请输入籍贯"></td>
+                <th>联系电话</th>
+                <td><input type="tel" placeholder="请输入联系电话"></td>
+                <th>电子邮箱</th>
+                <td><input type="email" placeholder="请输入电子邮箱"></td>
+                <th>照片</th>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <th>学历</th>
+                <td><select>
+                        <option value="小学">小学</option>
+                        <option value="初中">初中</option>
+                        <option value="高中">高中</option>
+                        <option value="大学">大学</option>
+                    </select></td>
+                <th>健康状况</th>
+                <td><select>
+                        <option value="良好">良好</option>
+                        <option value="一般">一般</option>
+                        <option value="较差">较差</option>
+                    </select></td>
+                <th>婚姻状况</th>
+                <td><select>
+                        <option value="未婚">未婚</option>
+                        <option value="已婚">已婚</option>
+                        <option value="离异">离异</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>求职意向</th>
+                <td><select multiple>
+                        <option value="前端开发">前端开发</option>
+                        <option value="后端开发">后端开发</option>
+                        <option value="测试">测试</option>
+                    </select></td>
+                <th>专业</th>
+                <td><select>
+                        <option value="计算机科学与技术">计算机科学与技术</option>
+                        <option value="软件工程">软件工程</option>
+                        <option value="电子信息工程">电子信息工程</option>
+                    </select></td>
+                <th>毕业院校</th>
+                <td><select>
+                        <option value="清华大学">清华大学</option>
+                        <option value="北京大学">北京大学</option>
+                        <option value="浙江大学">浙江大学</option>
+                    </select></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>技能证书</legend>
+        <input type="checkbox" id="cert1" name="cert1">
+        <label for="cert1">证书1</label><br>
+        <input type="checkbox" id="cert2" name="cert2">
+        <label for="cert2">证书2</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>个人特长与爱好</legend>
+        <input type="checkbox" id="hobby1" name="hobby1">
+        <label for="hobby1">特长/爱好1</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2">
+        <label for="hobby2">特长/爱好2</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>项目经历</legend>
+        <textarea placeholder="请输入项目经历"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>自我评价</legend>
+        <textarea placeholder="请输入自我评价"></textarea>
+    </fieldset>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+</body>
+
+</html>
