@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font - awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- 若有外部css文件，可在此引入 -->
+    <style>
+        /* 一些临时的样式补充，也可移到外部css文件 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+       .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+       .main {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+       .section {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            background-color: white;
+        }
+
+       .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+       .section h2 {
+            margin-top: 0;
+        }
+
+       .section:hover {
+            transform: translate(5px, 5px) rotate(5deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+       .form-section {
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><i class="fas fa - user icon"></i>个人简历</h1>
+    </div>
+    <div class="main">
+        <div class="section">
+            <i class="fas fa - info - circle icon"></i>
+            <h2>个人基本信息</h2>
+            <form class="form-section">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="gender">性别:</label>
+                <select id="gender" name="gender">
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+                <label for="phone">手机号码:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0 - 9]{11}" required>
+                <label for="marriage">婚姻状况:</label>
+                <select id="marriage" name="marriage">
+                    <option>未婚</option>
+                    <option>已婚</option>
+                    <option>离异</option>
+                    <option>丧偶</option>
+                </select>
+                <label for="email">电子邮箱:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+        <div class="section">
+            <i class="fas fa - graduation - cap icon"></i>
+            <h2>教育经历</h2>
+            <form class="form-section">
+                <label for="edu - school">毕业院校:</label>
+                <input type="text" id="edu - school" name="edu - school">
+                <label for="edu - major">专业:</label>
+                <input type="text" id="edu - major" name="edu - major">
+                <label for="edu - start">入学时间:</label>
+                <input type="date" id="edu - start" name="edu - start">
+                <label for="edu - end">毕业时间:</label>
+                <input type="date" id="edu - end" name="edu - end">
+            </form>
+        </div>
+        <div class="section">
+            <i class="fas fa - briefcase icon"></i>
+            <h2>工作经历</h2>
+            <form class="form-section">
+                <label for="work - company">工作单位:</label>
+                <input type="text" id="work - company" name="work - company">
+                <label for="work - position">职位:</label>
+                <input type="text" id="work - position" name="work - position">
+                <label for="work - start">入职时间:</label>
+                <input type="date" id="work - start" name="work - start">
+                <label for="work - end">离职时间:</label>
+                <input type="date" id="work - end">
+            </form>
+        </div>
+        <div class="section">
+            <i class="fas fa - list - alt icon"></i>
+            <h2>技能证书</h2>
+            <form class="form-section">
+                <label for="skill - cert1">证书1:</label>
+                <input type="text" id="skill - cert1" name="skill - cert1">
+                <label for="skill - cert2">证书2:</label>
+                <input type="text" id="skill - cert2" name="skill - cert2">
+            </form>
+        </div>
+        <div class="section">
+            <i class="fas fa - user - circle icon"></i>
+            <h2>个人特长与爱好</h2>
+            <form class="form-section">
+                <label for="hobby1">特长/爱好1:</label>
+                <input type="text" id="hobby1" name="hobby1">
+                <label for="hobby2">特长/爱好2:</label>
+                <input type="text" id="hobby2" name="hobby2">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
